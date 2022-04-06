@@ -21,15 +21,21 @@ public class exercicio3 {
 
         int canal;
         int[] canais = { 4, 5, 7, 12 };
+        int c4 = 0, c5 = 0, c7 = 0, c12 = 0;
         int pessoas;
         int pessoasSoma = 0;
-        int casa;
 
         do {
             System.out.println("Entre com o número do canal: ");
             canal = input.nextInt();
-            if (canal == canais[canal]) {
-
+            if (canal == 4) {
+                c4++;
+            } else if (canal == 5) {
+                c5++;
+            } else if (canal == 7) {
+                c7++;
+            } else if (canal == 12) {
+                c12++;
             }
             System.out.println("Quantas pessoas estavam assistindo a esse canal?");
             pessoas = input.nextInt();
